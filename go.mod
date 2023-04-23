@@ -1,5 +1,5 @@
-module github.com/carlmjohnson/resperr
+module github.com/sollniss/resperr
 
-go 1.18
+go 1.20
 
 require github.com/carlmjohnson/be v0.22.4
