@@ -55,7 +55,7 @@ func (sc statusCoder) StatusCode() int {
 // Unlike pkg/errors, WithStatusCode will wrap a nil error.
 func WithStatusCode(err error, code int) error {
 	if err == nil {
-		err = errors.New(http.StatusText(code))
+		err = errors.New(StatusCodeToMessage(code))
 	}
 	return statusCoder{err, code}
 }
